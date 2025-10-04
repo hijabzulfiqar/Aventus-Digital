@@ -78,7 +78,7 @@ const HeroSection = () => {
         <motion.div variants={itemVariants}>
           <Badge
             variant="secondary"
-            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-red-950/50 text-red-400 border border-red-800/50 hover:bg-red-900/50 transition-colors duration-200 backdrop-blur-sm mt-10"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-red-950/50 text-red-400 border border-red-800/50 hover:bg-red-900/50 transition-colors duration-200 backdrop-blur-sm mt-14"
             asChild
           >
             <Link href="#" className="no-underline">
