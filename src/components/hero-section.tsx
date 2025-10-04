@@ -75,7 +75,7 @@ const HeroSection = () => {
         className="relative z-10 text-center max-w-5xl"
       >
         {/* Enhanced Badge */}
-        <motion.div variants={itemVariants}>
+        {/* <motion.div variants={itemVariants}>
           <Badge
             variant="secondary"
             className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-red-950/50 text-red-400 border border-red-800/50 hover:bg-red-900/50 transition-colors duration-200 backdrop-blur-sm mt-14"
@@ -88,7 +88,7 @@ const HeroSection = () => {
               </span>
             </Link>
           </Badge>
-        </motion.div>
+        </motion.div> */}
 
         {/* Improved Heading */}
         <motion.h1
