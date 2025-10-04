@@ -32,14 +32,39 @@ const itemVariants: Variants = {
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden bg-gradient-to-b from-gray-50/30 to-transparent">
+    <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
+      {/* Starry background effect */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/20 via-gray-900 to-gray-950"></div>
+        <div
+          className="stars absolute inset-0"
+          style={{
+            background: `
+            radial-gradient(2px 2px at 20px 30px, white, transparent),
+            radial-gradient(2px 2px at 60px 70px, white, transparent),
+            radial-gradient(1px 1px at 50px 50px, white, transparent),
+            radial-gradient(1px 1px at 130px 80px, white, transparent),
+            radial-gradient(2px 2px at 90px 10px, white, transparent),
+            radial-gradient(1px 1px at 110px 120px, white, transparent),
+            radial-gradient(1px 1px at 150px 60px, white, transparent),
+            radial-gradient(2px 2px at 180px 90px, white, transparent),
+            radial-gradient(1px 1px at 10px 100px, white, transparent),
+            radial-gradient(1px 1px at 40px 140px, white, transparent)
+          `,
+            backgroundSize: "200px 200px",
+            backgroundRepeat: "repeat",
+            opacity: 0.5,
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
+      </div>
       <AnimatedGridPattern
         numSquares={30}
-        maxOpacity={0.1}
+        maxOpacity={0.05}
         duration={3}
         className={cn(
           "mask-[radial-gradient(600px_circle_at_center,white,transparent)]",
-          "inset-x-0 h-full skew-y-12"
+          "inset-x-0 h-full skew-y-12 opacity-30"
         )}
       />
 
@@ -53,7 +78,7 @@ const HeroSection = () => {
         <motion.div variants={itemVariants}>
           <Badge
             variant="secondary"
-            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 transition-colors duration-200"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-red-950/50 text-red-400 border border-red-800/50 hover:bg-red-900/50 transition-colors duration-200 backdrop-blur-sm mt-2"
             asChild
           >
             <Link href="#" className="no-underline">
@@ -68,14 +93,14 @@ const HeroSection = () => {
         {/* Improved Heading */}
         <motion.h1
           variants={itemVariants}
-          className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[1.1] text-gray-900"
+          className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[1.1] text-white"
         >
           <span className="block">Scale Your Brand with</span>
           <span className="block">
-            <span className="text-green-700 relative">
+            <span className="text-red-500 relative">
               Strategic Affiliate
               <motion.div
-                className="absolute -bottom-2 left-0 right-0 h-1 bg-green-700/20 rounded-full"
+                className="absolute -bottom-2 left-0 right-0 h-1 bg-red-500/30 rounded-full"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
@@ -88,7 +113,7 @@ const HeroSection = () => {
         {/* Description */}
         <motion.p
           variants={itemVariants}
-          className="mt-8 text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto"
+          className="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto"
         >
           Aventus Digital connects brands with high-performing affiliates to
           drive measurable growth. Our data-driven approach delivers superior
@@ -107,9 +132,9 @@ const HeroSection = () => {
           >
             <Button
               size="lg"
-              className="rounded-full text-base px-8 py-3 bg-green-700 hover:bg-green-800 shadow-lg hover:shadow-xl transition-all duration-200 font-semibold"
+              className="rounded-full text-base px-8 py-3 bg-red-600 hover:bg-red-700 shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/70 transition-all duration-200 font-semibold text-white"
             >
-              Start Growing Today
+              I am an affiliate
               <ArrowUpRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
@@ -122,10 +147,9 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="rounded-full text-base px-8 py-3 border-2 border-gray-300 hover:bg-gray-50 font-semibold"
+              className="rounded-full text-base px-8 py-3 border-2 border-gray-600 hover:bg-gray-800 text-gray-900 hover:text-white font-semibold backdrop-blur-sm"
             >
-              <CirclePlay className="mr-2 h-5 w-5" />
-              See Results
+              <CirclePlay className="mr-2 h-5 w-5" />I am Brand
             </Button>
           </motion.div>
         </motion.div>

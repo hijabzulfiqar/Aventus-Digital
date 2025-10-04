@@ -9,32 +9,32 @@ const services = [
     title: "Affiliate Network Management",
     description:
       "Connect with premium affiliates and manage campaigns through our sophisticated network platform with real-time analytics.",
-    hoverBg: "hover:bg-green-700",
-    defaultBg: "bg-white",
+    hoverBg: "hover:bg-red-600",
+    defaultBg: "bg-gray-800/50",
     icon: "🤝",
   },
   {
     title: "Performance Marketing",
     description:
       "Data-driven campaigns that deliver measurable results. We optimize every touchpoint to maximize your ROI and conversion rates.",
-    hoverBg: "hover:bg-slate-800",
-    defaultBg: "bg-white",
+    hoverBg: "hover:bg-gray-700",
+    defaultBg: "bg-gray-800/50",
     icon: "📊",
   },
   {
     title: "Brand Partnership Strategy",
     description:
       "Strategic partnerships that align with your brand values and audience. We identify and cultivate long-term affiliate relationships.",
-    hoverBg: "hover:bg-green-700",
-    defaultBg: "bg-white",
+    hoverBg: "hover:bg-red-600",
+    defaultBg: "bg-gray-800/50",
     icon: "🎯",
   },
   {
     title: "Advanced Attribution & Analytics",
     description:
       "Comprehensive tracking and attribution models that provide deep insights into campaign performance and affiliate effectiveness.",
-    hoverBg: "hover:bg-slate-800",
-    defaultBg: "bg-white",
+    hoverBg: "hover:bg-gray-700",
+    defaultBg: "bg-gray-800/50",
     icon: "🔍",
   },
 ];
@@ -122,7 +122,7 @@ const arrowVariants: Variants = {
 
 export default function OurServices() {
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto">
+    <section className="py-20 px-4 max-w-7xl mx-auto bg-gray-950">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -133,10 +133,10 @@ export default function OurServices() {
           variants={headerVariants}
           className="mb-16 justify-center text-center"
         >
-          <h2 className="text-lg font-bold text-gray-700 mb-6 tracking-[0.25em] uppercase">
+          <h2 className="text-lg font-bold text-gray-300 mb-6 tracking-[0.25em] uppercase">
             Our Services
           </h2>
-          <div className="w-16 h-0.5 bg-green-700 mb-6 justify-center mx-auto" />
+          <div className="w-16 h-0.5 bg-red-600 mb-6 justify-center mx-auto" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -148,26 +148,26 @@ export default function OurServices() {
               className="group"
             >
               <Card
-                className={`h-full border-0 shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer ${service.defaultBg} ${service.hoverBg} group-hover:text-white`}
+                className={`h-full border border-gray-700/50 shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-red-900/30 transition-all duration-500 cursor-pointer ${service.defaultBg} ${service.hoverBg} group-hover:text-white backdrop-blur-sm`}
               >
                 <CardContent className="p-8 h-full min-h-[280px]">
                   <motion.h3
-                    className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-white"
+                    className="text-2xl font-bold mb-4 text-white group-hover:text-white"
                     variants={titleVariants}
                   >
                     {service.title}
                   </motion.h3>
 
-                  <p className="text-gray-600 group-hover:text-white/90 leading-relaxed mb-8">
+                  <p className="text-gray-300 group-hover:text-white/90 leading-relaxed mb-8">
                     {service.description}
                   </p>
 
                   <div className="flex justify-end">
                     <motion.div
-                      className="w-10 h-10 rounded-full bg-gray-100 group-hover:bg-white/20 flex items-center justify-center"
+                      className="w-10 h-10 rounded-full bg-gray-700 group-hover:bg-white/20 flex items-center justify-center"
                       variants={arrowVariants}
                     >
-                      <ArrowUpRight className="w-5 h-5 text-gray-700 group-hover:text-white" />
+                      <ArrowUpRight className="w-5 h-5 text-gray-300 group-hover:text-white" />
                     </motion.div>
                   </div>
                 </CardContent>

@@ -62,17 +62,17 @@ const testimonials = [
 ];
 
 const TestimonialsSections = () => (
-  <div className="min-h-screen flex justify-center items-center py-12">
+  <div className="min-h-screen flex justify-center items-center py-12 bg-gray-950">
     <div className="h-full w-full">
-      <h2 className="text-5xl font-semibold text-center tracking-[-0.03em] px-6 text-pretty">
+      <h2 className="text-5xl font-semibold text-center tracking-[-0.03em] px-6 text-pretty text-white">
         Client Success Stories
       </h2>
-      <p className="mt-3 text-center text-muted-foreground text-xl">
+      <p className="mt-3 text-center text-gray-400 text-xl">
         Discover how brands achieve exceptional growth through our affiliate marketing expertise
       </p>
       <div className="mt-14 relative">
-        <div className="z-10 absolute left-0 inset-y-0 w-[15%] bg-gradient-to-r from-background to-transparent" />
-        <div className="z-10 absolute right-0 inset-y-0 w-[15%] bg-gradient-to-l from-background to-transparent" />
+        <div className="z-10 absolute left-0 inset-y-0 w-[15%] bg-gradient-to-r from-gray-950 to-transparent" />
+        <div className="z-10 absolute right-0 inset-y-0 w-[15%] bg-gradient-to-l from-gray-950 to-transparent" />
         <Marquee pauseOnHover className="[--duration:20s]">
           <TestimonialList />
         </Marquee>
@@ -88,27 +88,27 @@ const TestimonialList = () =>
   testimonials.map((testimonial) => (
     <div
       key={testimonial.id}
-      className="min-w-96 max-w-sm bg-accent rounded-xl p-6"
+      className="min-w-96 max-w-sm bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50"
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Avatar>
-            <AvatarFallback className="text-xl font-medium bg-primary text-primary-foreground">
+            <AvatarFallback className="text-xl font-medium bg-red-600 text-white">
               {testimonial.name.charAt(0)}
             </AvatarFallback>
           </Avatar>
           <div>
-            <p className="text-lg font-semibold">{testimonial.name}</p>
-            <p className="text-sm text-gray-500">{testimonial.designation}</p>
+            <p className="text-lg font-semibold text-white">{testimonial.name}</p>
+            <p className="text-sm text-gray-400">{testimonial.designation}</p>
           </div>
         </div>
         <Button variant="ghost" size="icon" asChild>
           <Link href="#" target="_blank">
-            <TwitterLogo className="w-4 h-4" />
+            <TwitterLogo className="w-4 h-4 text-gray-400 hover:text-white" />
           </Link>
         </Button>
       </div>
-      <p className="mt-5 text-[17px]">{testimonial.testimonial}</p>
+      <p className="mt-5 text-[17px] text-gray-300">{testimonial.testimonial}</p>
     </div>
   ));
 

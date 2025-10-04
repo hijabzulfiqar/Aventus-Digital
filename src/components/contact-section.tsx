@@ -69,7 +69,7 @@ export function ContactSection() {
 
   return (
     <section
-      className="relative bg-gradient-to-br from-gray-50 via-white to-army-green/5 py-20 lg:py-32 overflow-hidden"
+      className="relative bg-gray-950 py-20 lg:py-32 overflow-hidden"
       id="contact"
     >
       {/* Animated Background Elements */}
@@ -92,7 +92,7 @@ export function ContactSection() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-20 right-10 w-40 h-40 bg-army-green/10 rounded-full blur-3xl"
+        className="absolute top-20 right-10 w-40 h-40 bg-red-600/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -116,7 +116,7 @@ export function ContactSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="inline-flex items-center px-4 py-2 bg-army-green/10 text-army-green rounded-full text-sm font-semibold mb-8"
+            className="inline-flex items-center px-4 py-2 bg-red-600/10 text-red-600 rounded-full text-sm font-semibold mb-8"
           >
             <MessageCircle className="w-4 h-4 mr-2" />
             24/7 Support • Free Consultation • Expert Team
@@ -126,21 +126,21 @@ export function ContactSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Let's{" "}
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="text-army-green relative"
+              className="text-red-600 relative"
             >
               Transform
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.8, delay: 1.2 }}
-                className="absolute bottom-0 left-0 right-0 h-1 bg-army-green/30 rounded-full origin-left"
+                className="absolute bottom-0 left-0 right-0 h-1 bg-red-600/30 rounded-full origin-left"
               />
             </motion.span>
             <br />
@@ -148,7 +148,7 @@ export function ContactSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.0 }}
-              className="text-gray-900"
+              className="text-white"
             >
               Your Business
             </motion.span>
@@ -158,7 +158,7 @@ export function ContactSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed max-w-3xl mx-auto"
+            className="text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto"
           >
             Ready to scale your business with expert affiliate marketing? Get
             your free consultation today and discover how we can accelerate your
@@ -182,10 +182,10 @@ export function ContactSection() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-                className="flex items-center space-x-3 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg"
+                className="flex items-center space-x-3 bg-gray-800/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-gray-700"
               >
-                <item.icon className="w-5 h-5 text-army-green" />
-                <span className="text-gray-700 font-medium text-sm">
+                <item.icon className="w-5 h-5 text-red-600" />
+                <span className="text-gray-200 font-medium text-sm">
                   {item.text}
                 </span>
               </motion.div>
@@ -196,7 +196,7 @@ export function ContactSection() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 1, delay: 1.4 }}
-            className="w-20 h-1 bg-gradient-to-r from-army-green to-army-green-dark mx-auto rounded-full origin-center"
+            className="w-20 h-1 bg-gradient-to-r from-red-600 to-red-600-dark mx-auto rounded-full origin-center"
           />
         </div>
 
@@ -214,7 +214,7 @@ export function ContactSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-2xl font-semibold text-gray-900 mb-6"
+                className="text-2xl font-semibold text-white mb-6"
               >
                 Get In Touch
               </motion.h3>
@@ -234,7 +234,7 @@ export function ContactSection() {
                       },
                     }}
                   >
-                    <Card className="bg-white/80 backdrop-blur-sm border-gray-200/50 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Card className="bg-gray-800/80 backdrop-blur-sm border-gray-700 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
                       <CardContent className="p-6">
                         <div className="flex items-start space-x-3">
                           <motion.div
@@ -244,18 +244,18 @@ export function ContactSection() {
                               stiffness: 400,
                               damping: 10,
                             }}
-                            className="w-12 h-12 bg-gradient-to-br from-army-green to-army-green-dark rounded-full flex items-center justify-center flex-shrink-0 shadow-lg"
+                            className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-600-dark rounded-full flex items-center justify-center flex-shrink-0 shadow-lg"
                           >
                             <info.icon className="w-6 h-6 text-white" />
                           </motion.div>
                           <div>
-                            <h4 className="font-semibold text-gray-900 mb-2">
+                            <h4 className="font-semibold text-white mb-2">
                               {info.title}
                             </h4>
                             {info.details.map((detail, idx) => (
                               <p
                                 key={idx}
-                                className="text-gray-600 text-sm leading-relaxed"
+                                className="text-gray-300 text-sm leading-relaxed"
                               >
                                 {detail}
                               </p>
@@ -276,7 +276,7 @@ export function ContactSection() {
               transition={{ duration: 0.8, delay: 1.0 }}
               whileHover={{ scale: 1.02 }}
             >
-              <Card className="bg-gradient-to-br from-army-green to-army-green-dark text-white shadow-2xl overflow-hidden relative">
+              <Card className="bg-gradient-to-br from-red-600 to-red-600-dark text-white shadow-2xl overflow-hidden relative">
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{
@@ -306,7 +306,7 @@ export function ContactSection() {
                   >
                     <Button
                       variant="secondary"
-                      className="bg-white text-army-green hover:bg-gray-100 font-semibold group"
+                      className="bg-white text-red-600 hover:bg-gray-100 font-semibold group"
                     >
                       Book Your Session
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -324,7 +324,7 @@ export function ContactSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="h-full"
           >
-            <Card className="bg-white/80 backdrop-blur-sm border-gray-200/50 shadow-2xl h-full flex flex-col">
+            <Card className="bg-gray-800/80 backdrop-blur-sm border-gray-700 shadow-2xl h-full flex flex-col">
               <CardHeader className="flex-shrink-0">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -332,10 +332,10 @@ export function ContactSection() {
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className="flex items-center space-x-3"
                 >
-                  <div className="w-8 h-8 bg-army-green/10 rounded-full flex items-center justify-center">
-                    <Send className="w-4 h-4 text-army-green" />
+                  <div className="w-8 h-8 bg-red-600/10 rounded-full flex items-center justify-center">
+                    <Send className="w-4 h-4 text-red-600" />
                   </div>
-                  <CardTitle className="text-2xl text-gray-900">
+                  <CardTitle className="text-2xl text-white">
                     Send Us a Message
                   </CardTitle>
                 </motion.div>
@@ -343,7 +343,7 @@ export function ContactSection() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.8 }}
-                  className="text-gray-600 text-sm mt-2"
+                  className="text-gray-300 text-sm mt-2"
                 >
                   We'll get back to you within 24 hours
                 </motion.p>
@@ -363,7 +363,7 @@ export function ContactSection() {
                     <div>
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium text-gray-700 mb-2"
+                        className="block text-sm font-medium text-gray-300 mb-2"
                       >
                         Full Name *
                       </label>
@@ -382,7 +382,7 @@ export function ContactSection() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="w-full border-gray-300 focus:border-army-green focus:ring-army-green/20"
+                          className="w-full bg-gray-900 border-gray-600 text-white placeholder:text-gray-400 focus:border-red-600 focus:ring-red-600/20"
                           placeholder="Your full name"
                         />
                       </motion.div>
@@ -390,7 +390,7 @@ export function ContactSection() {
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-gray-700 mb-2"
+                        className="block text-sm font-medium text-gray-300 mb-2"
                       >
                         Email Address *
                       </label>
@@ -409,7 +409,7 @@ export function ContactSection() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="w-full border-gray-300 focus:border-army-green focus:ring-army-green/20"
+                          className="w-full bg-gray-900 border-gray-600 text-white placeholder:text-gray-400 focus:border-red-600 focus:ring-red-600/20"
                           placeholder="your@email.com"
                         />
                       </motion.div>
@@ -441,7 +441,7 @@ export function ContactSection() {
                         type="text"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full border-gray-300 focus:border-army-green focus:ring-army-green/20"
+                        className="w-full border-gray-300 focus:border-red-600 focus:ring-red-600/20"
                         placeholder="Your company name"
                       />
                     </motion.div>
@@ -474,7 +474,7 @@ export function ContactSection() {
                         required
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full h-full min-h-[120px] border-gray-300 focus:border-army-green focus:ring-army-green/20 resize-none"
+                        className="w-full h-full min-h-[120px] bg-gray-900 border-gray-600 text-white placeholder:text-gray-400 focus:border-red-600 focus:ring-red-600/20 resize-none"
                         placeholder="Tell us about your project and how we can help you achieve your goals..."
                       />
                     </motion.div>
@@ -490,7 +490,7 @@ export function ContactSection() {
                     >
                       <Button
                         type="submit"
-                        className="w-full bg-gradient-to-r from-army-green to-army-green-dark hover:from-army-green-dark hover:to-army-green text-white font-semibold py-3 shadow-lg hover:shadow-xl transition-all duration-300 group"
+                        className="w-full bg-gradient-to-r from-red-600 to-red-600-dark hover:from-red-600-dark hover:to-red-600 text-white font-semibold py-3 shadow-lg hover:shadow-xl transition-all duration-300 group"
                       >
                         Send Message
                         <motion.div
@@ -512,7 +512,7 @@ export function ContactSection() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.6, delay: 1.8 }}
-                      className="flex items-center justify-center space-x-4 text-sm text-gray-500"
+                      className="flex items-center justify-center space-x-4 text-sm text-gray-400"
                     >
                       <div className="flex items-center space-x-1">
                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>

@@ -122,7 +122,7 @@ const lineVariants: Variants = {
 
 export default function AboutUs() {
   return (
-    <section className="py-24 px-4 max-w-7xl mx-auto bg-gradient-to-b from-gray-50/30 to-transparent">
+    <section className="py-24 px-4 max-w-7xl mx-auto bg-gradient-to-b from-gray-900 via-gray-950 to-gray-950">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -132,26 +132,26 @@ export default function AboutUs() {
         {/* Centered Header */}
         <motion.div variants={headerVariants} className="text-center mb-20">
           <motion.h2
-            className="text-sm font-semibold text-gray-700 mb-6 tracking-[0.25em] uppercase"
+            className="text-sm font-semibold text-gray-300 mb-6 tracking-[0.25em] uppercase"
             variants={headerVariants}
           >
             About Us
           </motion.h2>
           <motion.div
-            className="w-20 h-0.5 bg-green-700 mx-auto mb-8"
+            className="w-20 h-0.5 bg-red-600 mx-auto mb-8"
             initial={{ width: 0 }}
             whileInView={{ width: 80 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.5 }}
           />
           <motion.h3
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight max-w-4xl mx-auto"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight max-w-4xl mx-auto"
             variants={headerVariants}
           >
-            <span className="text-green-700 relative">
+            <span className="text-red-500 relative">
               Aventus Digital
               <motion.div
-                className="absolute -bottom-1 left-0 h-0.5 bg-green-700/30"
+                className="absolute -bottom-1 left-0 h-0.5 bg-red-500/30"
                 initial={{ width: 0 }}
                 whileInView={{ width: "100%" }}
                 viewport={{ once: true }}
@@ -174,23 +174,23 @@ export default function AboutUs() {
               <div className="relative">
                 {/* Animated background circle */}
                 <motion.div
-                  className="absolute -inset-4 rounded-full bg-green-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  className="absolute -inset-4 rounded-full bg-red-950/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                 />
 
                 <div className="relative z-10">
-                  <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-green-700 mb-3 leading-none">
+                  <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-red-500 mb-3 leading-none">
                     <AnimatedNumber target={stat.number} delay={stat.delay} />
-                    <span className="text-green-700">{stat.suffix}</span>
+                    <span className="text-red-500">{stat.suffix}</span>
                   </div>
 
                   <motion.div
-                    className="bg-green-700 h-0.5 mx-auto mb-4 group-hover:bg-green-600 transition-colors duration-300"
+                    className="bg-red-600 h-0.5 mx-auto mb-4 group-hover:bg-red-500 transition-colors duration-300"
                     variants={lineVariants}
                   />
 
-                  <p className="text-gray-600 text-lg font-medium capitalize tracking-wide group-hover:text-gray-800 transition-colors duration-300">
+                  <p className="text-gray-300 text-lg font-medium capitalize tracking-wide group-hover:text-white transition-colors duration-300">
                     {stat.label}
                   </p>
                 </div>
@@ -207,7 +207,7 @@ export default function AboutUs() {
               className="lg:col-span-3 text-center lg:text-left"
             >
               <motion.p
-                className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-8"
+                className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8"
                 variants={contentVariants}
               >
                 We connect brands with high-performance affiliates through
@@ -221,23 +221,23 @@ export default function AboutUs() {
                 className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center"
                 variants={contentVariants}
               >
-                <div className="p-4 rounded-lg bg-green-50 border border-green-100">
-                  <div className="text-2xl font-bold text-green-700 mb-2">
+                <div className="p-4 rounded-lg bg-red-950/30 border border-red-800/50 backdrop-blur-sm">
+                  <div className="text-2xl font-bold text-red-500 mb-2">
                     Strategic
                   </div>
-                  <div className="text-sm text-gray-600">Partnerships</div>
+                  <div className="text-sm text-gray-400">Partnerships</div>
                 </div>
-                <div className="p-4 rounded-lg bg-green-50 border border-green-100">
-                  <div className="text-2xl font-bold text-green-700 mb-2">
+                <div className="p-4 rounded-lg bg-red-950/30 border border-red-800/50 backdrop-blur-sm">
+                  <div className="text-2xl font-bold text-red-500 mb-2">
                     Data-Driven
                   </div>
-                  <div className="text-sm text-gray-600">Optimization</div>
+                  <div className="text-sm text-gray-400">Optimization</div>
                 </div>
-                <div className="p-4 rounded-lg bg-green-50 border border-green-100">
-                  <div className="text-2xl font-bold text-green-700 mb-2">
+                <div className="p-4 rounded-lg bg-red-950/30 border border-red-800/50 backdrop-blur-sm">
+                  <div className="text-2xl font-bold text-red-500 mb-2">
                     Cutting-Edge
                   </div>
-                  <div className="text-sm text-gray-600">Technology</div>
+                  <div className="text-sm text-gray-400">Technology</div>
                 </div>
               </motion.div>
             </motion.div>
@@ -252,11 +252,10 @@ export default function AboutUs() {
                 transition={{ duration: 0.2 }}
               >
                 <Button
-                  variant="outline"
                   size="lg"
-                  className="px-10 py-4 text-green-700 border-2 border-green-700 hover:bg-green-700 hover:text-white transition-all duration-300 font-semibold tracking-wider text-sm shadow-lg hover:shadow-xl rounded-full"
+                  className="px-8 py-3 bg-red-600 hover:bg-red-700 text-white rounded-full font-semibold shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/70 transition-all duration-200"
                 >
-                  LEARN MORE
+                  Log In
                 </Button>
               </motion.div>
             </motion.div>
@@ -266,10 +265,10 @@ export default function AboutUs() {
         {/* Optional bottom CTA section */}
         <motion.div
           variants={contentVariants}
-          className="text-center mt-20 pt-16 border-t border-gray-200"
+          className="text-center mt-20 pt-16 border-t border-gray-800"
         >
           <motion.p
-            className="text-gray-600 text-lg mb-6"
+            className="text-gray-300 text-lg mb-6"
             variants={contentVariants}
           >
             Ready to scale your affiliate marketing efforts?
@@ -280,16 +279,16 @@ export default function AboutUs() {
           >
             <Button
               size="lg"
-              className="px-8 py-3 bg-green-700 hover:bg-green-800 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+              className="px-8 py-3 bg-red-600 hover:bg-red-700 text-white rounded-full font-semibold shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/70 transition-all duration-200"
             >
-              Get Started Today
+              Brand Sign Up
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="px-8 py-3 border-2 border-gray-300 hover:bg-gray-50 rounded-full font-semibold transition-all duration-200"
+              className="px-8 py-3 border-2 border-gray-600 hover:bg-gray-800 text-gray-900 hover:text-white rounded-full font-semibold transition-all duration-200 backdrop-blur-sm"
             >
-              Schedule a Call
+              Affiliate Sign Up
             </Button>
           </motion.div>
         </motion.div>

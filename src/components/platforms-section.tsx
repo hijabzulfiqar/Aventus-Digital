@@ -67,26 +67,26 @@ const features = [
 
 const Features07Page = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center bg-gray-950">
       <div className="max-w-(--breakpoint-xl) w-full py-10 px-6">
-        <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center">
+        <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center text-white">
           Comprehensive Marketing Solutions
         </h2>
-        <p className="mt-2 text-muted-foreground text-lg sm:text-xl sm:text-center">
+        <p className="mt-2 text-gray-400 text-lg sm:text-xl sm:text-center">
           Everything you need to succeed in affiliate marketing and digital growth.
         </p>
         <div className="mt-12 sm:mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-y-8">
           {features.map((feature, index) => (
             <Link key={index} href="#">
-              <div className="flex gap-6 items-center rounded-lg -mx-2 sm:mx-0 max-w-lg hover:bg-gray-50 p-4 transition-colors">
-                <div className="h-16 aspect-square shrink-0 rounded-lg bg-army-green/10 flex items-center justify-center">
-                  <feature.icon className="w-8 h-8 text-army-green" />
+              <div className="flex gap-6 items-center rounded-lg -mx-2 sm:mx-0 max-w-lg hover:bg-gray-800/50 p-4 transition-colors border border-transparent hover:border-red-900/30">
+                <div className="h-16 aspect-square shrink-0 rounded-lg bg-red-950/30 flex items-center justify-center border border-red-900/30">
+                  <feature.icon className="w-8 h-8 text-red-500" />
                 </div>
                 <div className="">
-                  <span className="font-semibold tracking-[-0.015em] text-lg">
+                  <span className="font-semibold tracking-[-0.015em] text-lg text-white">
                     {feature.title}
                   </span>
-                  <p className="mt-1 text-sm text-muted-foreground text-pretty">
+                  <p className="mt-1 text-sm text-gray-400 text-pretty">
                     {feature.description}
                   </p>
                 </div>

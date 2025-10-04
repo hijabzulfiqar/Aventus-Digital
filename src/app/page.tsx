@@ -13,7 +13,7 @@ import Logos06Page from "@/components/logos-06";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gray-950">
       <HeroSection />
       <Logos06Page />
       <WhatWeOffer />

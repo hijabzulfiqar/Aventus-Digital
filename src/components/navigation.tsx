@@ -5,7 +5,7 @@ import { NavigationSheet } from "./navigation-sheet";
 
 const Navigation = () => {
   return (
-    <nav className="fixed top-6 inset-x-4 h-16 bg-background border dark:border-slate-700/70 max-w-screen-xl mx-auto rounded-full z-50">
+    <nav className="fixed top-6 inset-x-4 h-16 bg-gray-900/80 backdrop-blur-md border border-gray-800 max-w-screen-xl mx-auto rounded-full z-50">
       <div className="h-full flex items-center justify-between mx-auto px-4">
         <Logo />
 
@@ -14,18 +14,20 @@ const Navigation = () => {
 
         <div className="flex items-center gap-3">
           <Button
-            variant="outline"
-            className="hidden sm:inline-flex rounded-full"
+            // variant="outline"
+            className="hidden sm:inline-flex rounded-full bg-gray-800 text-white hover:bg-gray-800 hover:text-white"
           >
             Brand Sign Up
           </Button>
           <Button
-            variant="outline"
-            className="hidden sm:inline-flex rounded-full"
+            // variant="outline"
+            className="hidden sm:inline-flex rounded-full bg-gray-800 text-white hover:bg-gray-800 hover:text-white"
           >
             Affiliate Sign Up
           </Button>
-          <Button className="rounded-full md:block hidden">Login</Button>
+          <Button className="rounded-full md:block hidden bg-red-600 text-white hover:bg-red-600 hover:text-white">
+            Login
+          </Button>
 
           {/* Mobile Menu */}
           <div className="md:hidden">

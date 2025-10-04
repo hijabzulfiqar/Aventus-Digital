@@ -12,9 +12,9 @@ import { Marquee } from "@/components/ui/marquee";
 
 const Logos06Page = () => {
   return (
-    <div className=" flex items-center justify-center px-6">
+    <div className="bg-gray-950 flex items-center justify-center px-6 py-12">
       <div className="overflow-hidden">
-        <p className="text-center text-xl font-medium text-muted-foreground">
+        <p className="text-center text-xl font-medium text-gray-400">
           Trusted by 500+ leading brands worldwide
         </p>
 
