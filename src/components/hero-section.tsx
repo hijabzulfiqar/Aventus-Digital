@@ -95,19 +95,16 @@ const HeroSection = () => {
           variants={itemVariants}
           className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[1.1] text-white"
         >
-          <span className="block">Scale Your Brand with</span>
-          <span className="block">
-            <span className="text-red-500 relative">
-              Strategic Affiliate
+          <span className="block">The <span className="text-red-500 relative">
+              CONSERVATIVE
               <motion.div
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-red-500/30 rounded-full"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
               />
-            </span>
-          </span>
-          <span className="block">Marketing</span>
+            </span> Affiliate Marketplace</span>
+          <span className="block">Built For Performance</span>
         </motion.h1>
 
         {/* Description */}
