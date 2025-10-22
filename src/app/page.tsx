@@ -15,12 +15,14 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-950">
       <HeroSection />
-      <Logos06Page />
-      <WhatWeOffer />
+      {/* <Logos06Page /> */}
+      <div className="mt-1">
+        <WhatWeOffer />
+      </div>
       <AboutUs />
 
       <Features07Page />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
     </main>
   );
 }

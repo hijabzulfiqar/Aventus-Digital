@@ -6,36 +6,36 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   {
-    title: "Affiliate Network Management",
+    title: "Access to the Marketplace",
     description:
-      "Connect with premium affiliates and manage campaigns through our sophisticated network platform with real-time analytics.",
+      "Gain access to a curated affiliate marketplace where media buyers, mailers, listicle owners, and native advertisers promote high-performing offers optimized by traffic type and audience fit.",
     hoverBg: "hover:bg-red-600",
     defaultBg: "bg-gray-800/50",
-    icon: "🤝",
+    icon: "🥇",
   },
   {
-    title: "Performance Marketing",
+    title: "Data Monetization",
     description:
-      "Data-driven campaigns that deliver measurable results. We optimize every touchpoint to maximize your ROI and conversion rates.",
+      "Partner with Aventus to unlock the full value of your data. Our email and SMS monetization platform manages, segments, and optimizes your lists for maximum yield — leveraging our in-house offers and audiences to generate scalable, compliant, performance-driven growth.",
     hoverBg: "hover:bg-gray-700",
     defaultBg: "bg-gray-800/50",
-    icon: "📊",
+    icon: "🥈",
   },
   {
-    title: "Brand Partnership Strategy",
+    title: "Co-Registration (Co-Reg)",
     description:
-      "Strategic partnerships that align with your brand values and audience. We identify and cultivate long-term affiliate relationships.",
+      "Scale your newsletter growth with our Co-Reg solutions. We help brands accelerate subscriber acquisition by aligning their audience with qualified, permission-based leads from our high-volume network.",
     hoverBg: "hover:bg-red-600",
     defaultBg: "bg-gray-800/50",
-    icon: "🎯",
+    icon: "🥉",
   },
   {
-    title: "Advanced Attribution & Analytics",
+    title: "Agency of Record (Affiliate Program Management)",
     description:
-      "Comprehensive tracking and attribution models that provide deep insights into campaign performance and affiliate effectiveness.",
+      "As your Agency of Record, Aventus fully manages your affiliate program — from partner onboarding and offer optimization to reporting and compliance — so you can scale without the overhead.",
     hoverBg: "hover:bg-gray-700",
     defaultBg: "bg-gray-800/50",
-    icon: "🔍",
+    icon: "🏁",
   },
 ];
 
@@ -161,15 +161,6 @@ export default function OurServices() {
                   <p className="text-gray-300 group-hover:text-white/90 leading-relaxed mb-8">
                     {service.description}
                   </p>
-
-                  <div className="flex justify-end">
-                    <motion.div
-                      className="w-10 h-10 rounded-full bg-gray-700 group-hover:bg-white/20 flex items-center justify-center"
-                      variants={arrowVariants}
-                    >
-                      <ArrowUpRight className="w-5 h-5 text-gray-300 group-hover:text-white" />
-                    </motion.div>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>

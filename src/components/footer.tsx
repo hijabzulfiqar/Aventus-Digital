@@ -6,7 +6,7 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
-
+import Image from "next/image";
 const footerLinks = [
   {
     title: "About Us",
@@ -28,12 +28,12 @@ const Footer05Page = () => {
           <div className="py-12 flex flex-col justify-start items-center">
             {/* Logo */}
             <div className="flex items-center">
-              <img
-                src="/images/logo-w1.png"
+              <Image
+                src="/images/Logo-w1.png"
                 alt="Aventus Digital"
-                width="120"
-                height="40"
-                className="object-contain"
+                width={80}
+                height={32}
+                className="object-contain max-h-14 mb-1"
               />
             </div>
 

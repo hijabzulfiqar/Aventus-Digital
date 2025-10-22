@@ -514,9 +514,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-red-600/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="w-8 h-8 text-red-600" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">
-                Growth
-              </h3>
+              <h3 className="text-xl font-semibold text-white mb-3">Growth</h3>
               <p className="text-gray-300">
                 Focused on driving measurable growth for all our partners.
               </p>
@@ -544,7 +542,7 @@ export default function AboutPage() {
                 Ready to Work with Experts?
               </h3>
               <p className="text-lg text-gray-300 mb-8">
-                Our team combines over 50 years of combined experience in
+                Our team combines over 15 years of combined experience in
                 affiliate marketing, digital strategy, and performance
                 optimization. We're here to help you achieve your growth goals.
               </p>
@@ -570,7 +568,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 lg:py-20 bg-gray-950">
+      {/* <section className="py-16 lg:py-20 bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -611,7 +609,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

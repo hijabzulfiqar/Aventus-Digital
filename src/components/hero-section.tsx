@@ -5,7 +5,19 @@ import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
+import {
+  ArrowRight,
+  Crosshair,
+  Mountain,
+  Moon,
+  Flag,
+  Activity,
+  Settings,
+  Landmark,
+  BookOpen,
+  Shirt,
+  Star,
+} from "lucide-react";
 import Link from "next/link";
 
 const containerVariants: Variants = {
@@ -32,7 +44,7 @@ const itemVariants: Variants = {
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
+    <div className="relative min-h-screen flex items-center justify-center py-20 px-6 overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
       {/* Starry background effect */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/20 via-gray-900 to-gray-950"></div>
@@ -95,16 +107,20 @@ const HeroSection = () => {
           variants={itemVariants}
           className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[1.1] text-white"
         >
-          <span className="block">The <span className="text-red-500 relative">
-              CONSERVATIVE
+          <span className="block">
+            The{" "}
+            <span className="text-red-500 relative">
+              Conservative
               <motion.div
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-red-500/30 rounded-full"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
               />
-            </span> Affiliate Marketplace</span>
-          <span className="block">Built For Performance</span>
+            </span>
+          </span>
+          <span className="block">Affiliate Marketplace</span>
+          <span className="block">Built for Performance</span>
         </motion.h1>
 
         {/* Description */}
@@ -112,9 +128,10 @@ const HeroSection = () => {
           variants={itemVariants}
           className="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto"
         >
-          Aventus Digital connects brands with high-performing affiliates to
-          drive measurable growth. Our data-driven approach delivers superior
-          ROI through precision-targeted campaigns.
+          Aventus Digital connects high-performing affiliates with
+          freedom-driven brands across survival, outdoor, 2A, political, and
+          alternative health verticals — empowering measurable growth through
+          precision marketing.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -131,8 +148,8 @@ const HeroSection = () => {
               size="lg"
               className="rounded-full text-base px-8 py-3 bg-red-600 hover:bg-red-700 shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/70 transition-all duration-200 font-semibold text-white"
             >
-              I am an affiliate
-              <ArrowUpRight className="ml-2 h-5 w-5" />
+              I am an Affiliate
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
 
@@ -144,10 +161,138 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="rounded-full text-base px-8 py-3 border-2 border-gray-600 hover:bg-gray-800 text-gray-900 hover:text-white font-semibold backdrop-blur-sm"
+              className="rounded-full text-base px-8 py-3 border-2 border-gray-600 bg-gray-800 hover:bg-gray-800 text-white hover:text-white font-semibold backdrop-blur-sm"
             >
-              <CirclePlay className="mr-2 h-5 w-5" />I am Brand
+              I am a Brand
             </Button>
+          </motion.div>
+        </motion.div>
+
+        {/* Category Icons */}
+        <motion.div
+          variants={itemVariants}
+          className="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-4xl mx-auto"
+        >
+          {/* Row 1 */}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Crosshair className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Survival
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Mountain className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Outdoor
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Moon className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              2A
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Flag className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Political
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Activity className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Alt Health
+            </span>
+          </motion.div>
+
+          {/* Row 2 */}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Settings className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Gadgets
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Landmark className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Precious Metals
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <BookOpen className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Faith
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Shirt className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Apparel
+            </span>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center text-red-500 group-hover:text-red-400 transition-colors">
+              <Star className="w-10 h-10" />
+            </div>
+            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
+              Veterans
+            </span>
           </motion.div>
         </motion.div>
       </motion.div>
