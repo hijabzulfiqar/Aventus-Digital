@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: ["123 Digital Avenue", "Suite 456", "New York, NY 10001"],
+    details: ["100 Duffy Ave Suite 510, Hicksville, NY 11801"],
   },
   {
     icon: Phone,

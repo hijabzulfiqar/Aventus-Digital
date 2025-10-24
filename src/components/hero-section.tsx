@@ -134,36 +134,39 @@ const HeroSection = () => {
           precision marketing.
         </motion.p>
 
-        {/* CTA Buttons */}
+        {/* CTA Buttons - Enhanced with Extra Width */}
         <motion.div
           variants={itemVariants}
-          className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6"
         >
+          {/* Affiliate Button - Primary */}
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.98 }}
             transition={{ duration: 0.2 }}
           >
             <Button
               size="lg"
-              className="rounded-full text-base px-8 py-3 bg-red-600 hover:bg-red-700 shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/70 transition-all duration-200 font-semibold text-white"
+              className="group rounded-full text-lg px-16 py-7 bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:from-red-600 hover:via-red-700 hover:to-red-800 shadow-2xl shadow-red-900/50 hover:shadow-3xl hover:shadow-red-900/80 transition-all duration-300 font-bold text-white border-0 min-w-[280px]"
             >
               I am an Affiliate
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
           </motion.div>
 
+          {/* Brand Button - Secondary */}
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.98 }}
             transition={{ duration: 0.2 }}
           >
             <Button
               variant="outline"
               size="lg"
-              className="rounded-full text-base px-8 py-3 border-2 border-gray-600 bg-gray-800 hover:bg-gray-800 text-white hover:text-white font-semibold backdrop-blur-sm"
+              className="group rounded-full text-lg px-16 py-7 border-2 border-white/30 hover:border-red-500/80 bg-white/5 hover:bg-red-500/15 text-white hover:text-white font-bold backdrop-blur-md shadow-lg shadow-black/20 hover:shadow-2xl hover:shadow-red-900/40 transition-all duration-300 min-w-[280px]"
             >
               I am a Brand
+              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
           </motion.div>
         </motion.div>

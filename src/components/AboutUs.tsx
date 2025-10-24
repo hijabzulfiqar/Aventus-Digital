@@ -129,7 +129,7 @@ export default function AboutUs() {
           </motion.div>
 
           {/* Log In Button - Positioned at bottom right */}
-          {/* <motion.div variants={contentVariants} className="flex justify-end">
+          <motion.div variants={contentVariants} className="flex justify-end">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -142,7 +142,7 @@ export default function AboutUs() {
                 Log In
               </Button>
             </motion.div>
-          </motion.div> */}
+          </motion.div>
         </div>
       </motion.div>
     </section>
