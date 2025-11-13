@@ -1,9 +1,8 @@
 import { Separator } from "@/components/ui/separator";
 import {
-  DribbbleIcon,
-  GithubIcon,
-  TwitchIcon,
   TwitterIcon,
+  FacebookIcon,
+  LinkedinIcon,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -63,32 +62,31 @@ const Footer05Page = () => {
 
             <div className="flex items-center gap-5 text-gray-400">
               <Link
-                href="#"
+                href="https://twitter.com/aventusdigital"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-red-500 transition-colors"
+                aria-label="Twitter"
               >
                 <TwitterIcon className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61583348263622"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-red-500 transition-colors"
+                aria-label="Facebook"
               >
-                <DribbbleIcon className="h-5 w-5" />
+                <FacebookIcon className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/aventusdigital"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-red-500 transition-colors"
+                aria-label="LinkedIn"
               >
-                <TwitchIcon className="h-5 w-5" />
-              </Link>
-              <Link
-                href="#"
-                target="_blank"
-                className="hover:text-red-500 transition-colors"
-              >
-                <GithubIcon className="h-5 w-5" />
+                <LinkedinIcon className="h-5 w-5" />
               </Link>
             </div>
           </div>
