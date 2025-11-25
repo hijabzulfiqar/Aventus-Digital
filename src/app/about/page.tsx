@@ -609,9 +609,12 @@ export default function AboutPage() {
                   <Button
                     size="lg"
                     className="px-8 py-6 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white rounded-full font-semibold shadow-lg shadow-red-900/50"
+                    asChild
                   >
-                    Explore Opportunities
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <Link href="/contact">
+                      Contact Us
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
                   </Button>
                 </motion.div>
               </div>
