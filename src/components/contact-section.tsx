@@ -28,12 +28,12 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (555) 123-4567"],
+    details: ["(917) 409-8550"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@aventusdigital.com", "support@aventusdigital.com"],
+    details: [" Manager@Aventus.Digital"],
   },
   {
     icon: Clock,
@@ -119,7 +119,7 @@ export function ContactSection() {
             className="inline-flex items-center px-4 py-2 bg-red-600/10 text-red-600 rounded-full text-sm font-semibold mb-8"
           >
             <MessageCircle className="w-4 h-4 mr-2" />
-            24/7 Support • Free Consultation • Expert Team
+            Free Consultation • Expert Team
           </motion.div>
 
           <motion.h1
