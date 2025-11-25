@@ -2,7 +2,6 @@
 
 import { motion, type Variants } from "framer-motion";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -148,9 +147,16 @@ const HeroSection = () => {
             <Button
               size="lg"
               className="group rounded-full text-lg px-16 py-7 bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:from-red-600 hover:via-red-700 hover:to-red-800 shadow-2xl shadow-red-900/50 hover:shadow-3xl hover:shadow-red-900/80 transition-all duration-300 font-bold text-white border-0 min-w-[280px]"
+              asChild
             >
-              I am an Affiliate
-              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+              <Link
+                href="https://aventus.everflowclient.io/affiliate/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                I am an Affiliate
+                <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
             </Button>
           </motion.div>
 
@@ -164,9 +170,16 @@ const HeroSection = () => {
               variant="outline"
               size="lg"
               className="group rounded-full text-lg px-16 py-7 border-2 border-white/30 hover:border-red-500/80 bg-white/5 hover:bg-red-500/15 text-white hover:text-white font-bold backdrop-blur-md shadow-lg shadow-black/20 hover:shadow-2xl hover:shadow-red-900/40 transition-all duration-300 min-w-[280px]"
+              asChild
             >
-              I am a Brand
-              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+              <Link
+                href="https://aventus.everflowclient.io/advertiser/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                I am a Brand
+                <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
             </Button>
           </motion.div>
         </motion.div>

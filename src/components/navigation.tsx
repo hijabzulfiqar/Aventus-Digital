@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
+import Link from "next/link";
 
 const Navigation = () => {
   return (
@@ -16,17 +17,40 @@ const Navigation = () => {
           <Button
             // variant="outline"
             className="hidden sm:inline-flex rounded-full bg-gray-800 text-white hover:bg-gray-800 hover:text-white"
+            asChild
           >
-            Brand Sign Up
+            <Link
+              href="https://aventus.everflowclient.io/advertiser/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Brand Sign Up
+            </Link>
           </Button>
           <Button
             // variant="outline"
             className="hidden sm:inline-flex rounded-full bg-gray-800 text-white hover:bg-gray-800 hover:text-white"
+            asChild
           >
-            Affiliate Sign Up
+            <Link
+              href="https://aventus.everflowclient.io/affiliate/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Affiliate Sign Up
+            </Link>
           </Button>
-          <Button className="rounded-full md:block hidden bg-red-600 text-white hover:bg-red-600 hover:text-white">
-            Login
+          <Button
+            className="rounded-full md:block hidden bg-red-600 text-white hover:bg-red-600 hover:text-white"
+            asChild
+          >
+            <Link
+              href="https://aventus.everflowclient.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Login
+            </Link>
           </Button>
 
           {/* Mobile Menu */}

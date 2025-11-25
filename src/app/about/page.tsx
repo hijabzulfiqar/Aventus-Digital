@@ -12,7 +12,6 @@ import {
   Target,
   Shield,
   TrendingUp,
-  Zap,
   Rocket,
 } from "lucide-react";
 import Link from "next/link";
@@ -684,7 +683,11 @@ export default function AboutPage() {
                       asChild
                       className="px-10 py-7 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-full font-bold text-lg shadow-2xl shadow-red-900/50 hover:shadow-red-900/70 transition-all duration-200"
                     >
-                      <Link href="/contact">
+                      <Link
+                        href="https://aventus.everflowclient.io/advertiser/signup"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Brands: Start a conversation
                         <ArrowRight className="ml-2 h-6 w-6" />
                       </Link>
@@ -701,7 +704,12 @@ export default function AboutPage() {
                       asChild
                       className="group relative px-10 py-7 bg-white hover:bg-gray-100 text-gray-900 hover:text-black rounded-full font-bold text-lg shadow-2xl shadow-white/20 hover:shadow-3xl hover:shadow-white/30 transition-all duration-300 border-0"
                     >
-                      <Link href="#" className="flex items-center gap-3">
+                      <Link
+                        href="https://aventus.everflowclient.io/affiliate/signup"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3"
+                      >
                         <span>Publishers: Apply for marketplace access</span>
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </Link>

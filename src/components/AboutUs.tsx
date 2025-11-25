@@ -127,22 +127,6 @@ export default function AboutUs() {
               <p className="text-gray-400 text-sm">Technology</p>
             </motion.div>
           </motion.div>
-
-          {/* Log In Button - Positioned at bottom right */}
-          <motion.div variants={contentVariants} className="flex justify-end">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.2 }}
-            >
-              <Button
-                size="lg"
-                className="px-10 py-6 bg-[#ef4444] hover:bg-[#dc2626] text-white rounded-full font-semibold text-base shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/70 transition-all duration-200"
-              >
-                Log In
-              </Button>
-            </motion.div>
-          </motion.div>
         </div>
       </motion.div>
     </section>
