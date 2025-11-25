@@ -69,7 +69,7 @@ const Footer05Page = () => {
 
             <div className="flex items-center gap-5 sm:gap-6 text-gray-400">
               <Link
-                href="https://twitter.com/aventusdigital"
+                href="https://x.com/AventusDigitalx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-red-500 transition-colors hover:scale-110 duration-200"
