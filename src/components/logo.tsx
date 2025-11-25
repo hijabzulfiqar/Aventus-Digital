@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const Logo = () => (
-  <div className="flex items-center gap-1">
+  <Link href="/" className="flex items-center gap-1 hover:opacity-90 transition-opacity">
     <Image
       src="/images/Logo-w1.png"
       alt="Aventus Digital"
@@ -10,5 +11,5 @@ export const Logo = () => (
       className="object-contain max-h-14 mb-1"
     />
     <span className="text-xl text-white font-bold">Aventus Digital</span>
-  </div>
+  </Link>
 );

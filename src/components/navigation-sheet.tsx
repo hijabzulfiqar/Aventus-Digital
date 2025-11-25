@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
+import Link from "next/link";
 
 export const NavigationSheet = () => {
   return (
@@ -23,17 +24,37 @@ export const NavigationSheet = () => {
           <Button
             variant="outline"
             className="w-full rounded-full bg-gray-800 text-white border-red-600/50"
+            asChild
           >
-            Brand Sign Up
+            <Link
+              href="https://aventus.everflowclient.io/advertiser/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Brand Sign Up
+            </Link>
           </Button>
           <Button
             variant="outline"
             className="w-full rounded-full bg-gray-800 text-white border-red-600/50"
+            asChild
           >
-            Affiliate Sign Up
+            <Link
+              href="https://aventus.everflowclient.io/affiliate/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Affiliate Sign Up
+            </Link>
           </Button>
-          <Button className="w-full rounded-full bg-red-600 text-white">
-            Login
+          <Button className="w-full rounded-full bg-red-600 text-white" asChild>
+            <Link
+              href="https://aventus.everflowclient.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Login
+            </Link>
           </Button>
         </div>
       </SheetContent>

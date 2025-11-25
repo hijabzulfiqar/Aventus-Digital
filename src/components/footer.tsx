@@ -33,7 +33,7 @@ const Footer05Page = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="py-10 sm:py-12 flex flex-col justify-start items-center">
             {/* Logo */}
-            <div className="flex items-center">
+            <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
               <Image
                 src="/images/Logo-w1.png"
                 alt="Aventus Digital"
@@ -41,7 +41,7 @@ const Footer05Page = () => {
                 height={32}
                 className="object-contain max-h-12 sm:max-h-14 mb-1"
               />
-            </div>
+            </Link>
 
             <ul className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 sm:gap-x-8 text-sm sm:text-base">
               {footerLinks.map(({ title, href }) => (
