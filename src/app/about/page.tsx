@@ -670,26 +670,27 @@ export default function AboutPage() {
                 </p>
 
                 <motion.div
-                  className="flex flex-col sm:flex-row gap-6 justify-center"
+                  className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center w-full px-4 sm:px-0"
                   variants={contentVariants}
                 >
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.2 }}
+                    className="w-full sm:w-auto"
                   >
                     <Button
                       size="lg"
                       asChild
-                      className="px-10 py-7 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-full font-bold text-lg shadow-2xl shadow-red-900/50 hover:shadow-red-900/70 transition-all duration-200"
+                      className="w-full sm:w-auto px-6 sm:px-10 py-6 sm:py-7 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-full font-bold text-base sm:text-lg shadow-2xl shadow-red-900/50 hover:shadow-red-900/70 transition-all duration-200"
                     >
                       <Link
-                        href="https://aventus.everflowclient.io/advertiser/signup"
+                        href="https://aventus.everflowclient.io/affiliate/signup"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Brands: Start a conversation
-                        <ArrowRight className="ml-2 h-6 w-6" />
+                        Affiliate Sign Up
+                        <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
                       </Link>
                     </Button>
                   </motion.div>
@@ -698,19 +699,20 @@ export default function AboutPage() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.2 }}
+                    className="w-full sm:w-auto"
                   >
                     <Button
                       size="lg"
                       asChild
-                      className="group relative px-10 py-7 bg-white hover:bg-gray-100 text-gray-900 hover:text-black rounded-full font-bold text-lg shadow-2xl shadow-white/20 hover:shadow-3xl hover:shadow-white/30 transition-all duration-300 border-0"
+                      className="group relative w-full sm:w-auto px-6 sm:px-10 py-6 sm:py-7 bg-white hover:bg-gray-100 text-gray-900 hover:text-black rounded-full font-bold text-base sm:text-lg shadow-2xl shadow-white/20 hover:shadow-3xl hover:shadow-white/30 transition-all duration-300 border-0"
                     >
                       <Link
-                        href="https://aventus.everflowclient.io/affiliate/signup"
+                        href="https://aventus.everflowclient.io/advertiser/signup"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3"
+                        className="flex items-center justify-center gap-2 sm:gap-3"
                       >
-                        <span>Publishers: Apply for marketplace access</span>
+                        <span>Brand Sign Up</span>
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </Link>
                     </Button>
