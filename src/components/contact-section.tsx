@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
-  MapPin,
   Phone,
   Mail,
   Clock,
@@ -20,11 +19,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const contactInfo = [
-  {
-    icon: MapPin,
-    title: "Address",
-    details: ["100 Duffy Ave Suite 510, Hicksville, NY 11801"],
-  },
   {
     icon: Phone,
     title: "Phone",
@@ -218,7 +212,7 @@ export function ContactSection() {
               >
                 Get In Touch
               </motion.h3>
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 gap-4">
                 {contactInfo.map((info, index) => (
                   <motion.div
                     key={index}
@@ -233,6 +227,7 @@ export function ContactSection() {
                         damping: 20,
                       },
                     }}
+                    className={index === contactInfo.length - 1 ? "sm:col-span-2" : ""}
                   >
                     <Card className="bg-gray-800/80 backdrop-blur-sm border-gray-700 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
                       <CardContent className="p-6">
